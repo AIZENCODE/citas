@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/925f4b0807.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+
+
+
+    <link rel="stylesheet" href="css/custome.css">
+</head>
+
+<body>
+
+
+    <div class="dashboard">
+
+        <nav class="nav shadow-sm  nav--active " id="nav">
+            <div class=" container nav__container px-2 py-5 p-xxl-5">
+                <i class="fa-solid fa-bars-staggered d-block d-xl-none menu__icon align-self-end" id="menu_close" ></i>
+
+                <div class="nav__logo d-flex flex-wrap align-items-center gap-3 ">
+                    <i class="fa-solid fa-basketball fs-2 text-primary"></i>
+                    <h5 class="nav__empresa fw-bold m-0">wwwork</h5>
+                </div>
+
+                <ul class="nav__menu">
+
+
+                    <li class="nav__item nav__item--active">
+                        <a href="" class=" d-flex align-items-center gap-4 ">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span class="">Dashboard</span>
+
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item ">
+                        <a href="" class=" d-flex align-items-center gap-4 ">
+                            <i class="fa-solid fa-suitcase"></i>
+                            <span class="">Job Board</span>
+
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item ">
+                        <a href="" class=" d-flex align-items-center gap-4 ">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span class="">Schedule</span>
+
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item ">
+                        <a href="" class=" d-flex align-items-center gap-4 ">
+                            <i class="fa-solid fa-message"></i>
+                            <span class="">Messenger</span>
+
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <div class=" nav__anuncio ">
+                    <img src="img/undraw_Happy_news_re_tsbd-removebg-preview.png" class="img__anuncio" alt="">
+                    <h5 class="anuncio__title">Get Upgrade</h5>
+                    <p>Step the next level, with more features</p>
+                    <a href="" class="btn btn-primary">Learn more</a>
+                </div>
+
+                <li class="nav__item mt-auto">
+                    <a href="" class=" d-flex align-items-center gap-4 ">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="">Logout</span>
+
+                    </a>
+                </li>
+
+            </div>
+
+        </nav>
+        <div class="contenido d-grid ">
+            <header class="header d-flex  align-items-center">
+                <div class="header__container container__m d-flex justify-content-start align-items-center gap-4 ">
+
+                    <i class="fa-solid fa-bars-staggered d-block d-xl-none menu__icon" id="menu" ></i>
+
+                    <div class="input-group d-none d-sm-flex  gap-2 input-group-sm border-0 header__search">
+                        <span class="input-group-text border-0 bg-white" id="inputGroup-sizing-sm">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="search" class="form-control  border-0"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                            placeholder="Quick Search (ctrl + O)">
+
+                    </div>
+
+
+                    <div class="header__info d-flex gap-4 align-items-center ms-auto ">
+
+                        <i class="fa-regular fa-bell notificacion__icon position-relative"> <span
+                                class="notificacion__alert"></span> </i>
+                        <span class="nav-item dropdown d-flex align-items-center">
+                           
+                                <span class="nav__img">DS</span>
+                                
+                           
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           
+                        </a>
+                            <ul class="dropdown-menu overflow-hidden">
+                                <li><a class="dropdown-item font__ocho" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item font__ocho" href="#">Dashboard</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item font__ocho" href="#">Logout</a></li>
+                            </ul>
+                        </span>
+                    </div>
+
+                </div>
+
+            </header>
+            <main class="main shadow-sm">
+                <div class="main__container container__m  py-5">
+                    <h1 class="main__title">Job Board</h1>
+
+                    <div class="main__content mt-5">
+
+                        <div class="main__filters d-flex flex-wrap flex-lg-nowrap align-items-center gap-4 ">
+
+
+                            <div class="input-group  border rounded-2 input__search ">
+                                <span class="input-group-text text-primary fw-bold bg-white border-0 px-4"
+                                    id="inputGroup-sizing-default"> <i class="fas fa-search"></i></span>
+                                <input type="text" class="form-control border-0 py-3" aria-label="Sizing example input"
+                                    placeholder="Search by job title, company, keywords"
+                                    aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group  border rounded-2 ">
+                                <span class="input-group-text text-primary fw-bold bg-white border-0 px-4"
+                                    id="inputGroup-sizing-default"><i class="fa-solid fa-map-pin"></i></span>
+                                    <select class="form-select border-0 py-3" id="inputGroupSelect02">
+                                        <option selected>Anywhere</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                            </div>
+
+                      
+                            <div class="input-group  border rounded-2 ">
+                                <span class="input-group-text text-primary fw-bold bg-white border-0 px-4"
+                                    id="inputGroup-sizing-default"><i class="fa-solid fa-filter"></i></span>
+                               <span class="form-control border-0 d-flex align-items-center d-flex justify-content-between py-3"> Filters <span class="badge text-bg-primary rounded-pill">4</span> </span>
+                            </div>
+
+
+
+                        </div>
+                        <div class="main__searchs my-4 d-flex flex-wrap gap-3">
+
+                            <span class="py-2 px-3 bg-white rounded-pill border main__tag d-flex align-items-center gap-2 shadow-sm"><i class="fa-solid fa-xmark tag__close text-primary "></i> Desing</span>
+
+                            <span class="py-2 px-3 bg-white rounded-pill border main__tag d-flex align-items-center gap-2 shadow-sm"><i class="fa-solid fa-xmark tag__close text-primary "></i> Regular</span>
+                            <span class="py-2 px-3 bg-white rounded-pill border main__tag d-flex align-items-center gap-2 shadow-sm"><i class="fa-solid fa-xmark tag__close text-primary "></i> Full Time</span>
+                            <span class="py-2 px-3 bg-white rounded-pill border main__tag d-flex align-items-center gap-2 shadow-sm"><i class="fa-solid fa-xmark tag__close text-primary "></i> B2B</span>
+
+                            <p class="m-0 p-0 align-self-center ">Clear all</p>
+
+                        </div>
+
+                        <div class="row main__citas align-items-start gap-3 gap-xxl-0 m-0 mt-5">
+
+                            <div class="card col-12 col-xxl-4">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                               
+                            </div>
+
+                            <div class="citas col-12 col-xxl-8 d-flex flex-column gap-3 ">
+
+                                <div class="cita__item d-flex flex-column flex-lg-row align-items-center gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-dropbox cita__icon"></i>   
+                                    <div class="cita__info d-grid  gap-2 w-100">
+                                        <div class="cita__text d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center gap-3">
+                                            <h2 class="cita__title m-0 ">UX Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-lg-auto  ">8.8 - 13.7k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center gap-3">
+                                            <p class=" m-0 ">Dropbox </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Warszawa</p>
+
+                                            <span class="cita__time  m-0 ms-lg-auto">2 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+
+<!--                                 
+                                <div class="cita__item d-flex gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-twitch cita__icon"></i>   
+                                    <div class="cita__info d-grid gap-2 w-100">
+                                        <div class="cita__text d-flex gap-3 align-items-center">
+                                            <h2 class="cita__title m-0 ">Product Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-auto ">8.2 - 13.5k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex align-items-center gap-3">
+                                            <p class=" m-0 ">Twitch </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Wroclaw</p>
+
+                                            <span class="cita__time ms-auto">2 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <div class="cita__item d-flex gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-google cita__icon"></i>   
+                                    <div class="cita__info d-grid gap-2 w-100">
+                                        <div class="cita__text d-flex gap-3 align-items-center">
+                                            <h2 class="cita__title m-0 ">UX/UI Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-auto ">7.5 - 12.5k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex align-items-center gap-3">
+                                            <p class=" m-0 ">Google </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Warszawa</p>
+
+                                            <span class="cita__time ms-auto">3 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <div class="cita__item d-flex gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-dropbox cita__icon"></i>   
+                                    <div class="cita__info d-grid gap-2 w-100">
+                                        <div class="cita__text d-flex gap-3 align-items-center">
+                                            <h2 class="cita__title m-0 ">UX Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-auto ">8.8 - 13.7k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex align-items-center gap-3">
+                                            <p class=" m-0 ">Dropbox </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Warszawa</p>
+
+                                            <span class="cita__time ms-auto">2 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <div class="cita__item d-flex gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-dropbox cita__icon"></i>   
+                                    <div class="cita__info d-grid gap-2 w-100">
+                                        <div class="cita__text d-flex gap-3 align-items-center">
+                                            <h2 class="cita__title m-0 ">UX Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-auto ">8.8 - 13.7k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex align-items-center gap-3">
+                                            <p class=" m-0 ">Dropbox </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Warszawa</p>
+
+                                            <span class="cita__time ms-auto">2 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                                <div class="cita__item d-flex gap-5 bg-white  rounded-3 p-4 ">
+                                    <i class="fa-brands fa-dropbox cita__icon"></i>   
+                                    <div class="cita__info d-grid gap-2 w-100">
+                                        <div class="cita__text d-flex gap-3 align-items-center">
+                                            <h2 class="cita__title m-0 ">UX Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                                <span class="cita__tag">Remove</span>
+                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-auto ">8.8 - 13.7k PLN</h3>
+                                        </div>
+                                        <div class="cita__text2 d-flex align-items-center gap-3">
+                                            <p class=" m-0 ">Dropbox </p>
+                                            <span class="linea"></span>
+                                            <p class="m-0 ">Warszawa</p>
+
+                                            <span class="cita__time ms-auto">2 days ago</span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div> -->
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination d-flex flex-wrap justify-content-end m-0">
+                                      <li class="page-item disabled">
+                                        <a class="page-link">Anterior</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Siguiente</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+
+
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
