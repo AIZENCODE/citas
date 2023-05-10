@@ -12064,7 +12064,7 @@ a {
 .container__m {
   width: 90%;
   margin: 0 auto;
-  padding: 24px 1em;
+  padding: 24px 1rem;
   max-width: 1400px;
 }
 
@@ -12105,8 +12105,8 @@ a {
 .menu__icon {
   display: grid;
   place-items: center;
-  font-size: 1.2em;
-  padding: 0.5em;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   color: var(--primary);
   background: white;
   border-radius: 5px;
@@ -12133,7 +12133,7 @@ a {
 }
 
 .notificacion__icon {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .notificacion__alert {
@@ -12165,21 +12165,21 @@ a {
 }
 
 .nav__logo {
-  margin-top: 1em;
-  padding-left: 1.2em;
+  margin-top: 1rem;
+  padding-left: 1.2rem;
 }
 
 .nav__menu {
-  margin-top: 4em;
+  margin-top: 4rem;
   list-style-type: none;
   padding-left: 0;
   display: grid;
-  gap: 0.2em;
+  gap: 0.2rem;
 }
 
 .nav__item {
   display: block;
-  padding: 1.2em;
+  padding: 1.2rem;
   border-radius: 15px;
   color: var(--plomo);
   font-size: 0.875rem;
@@ -12199,15 +12199,15 @@ a {
 }
 
 .nav__anuncio {
-  margin-top: 9.8em;
+  margin-top: 9.8rem;
   position: relative;
   display: grid;
   background: #F4F0FD;
   text-align: center;
-  padding: 3em 1.2em;
+  padding: 3rem 1.2rem;
   border-radius: 25px;
   z-index: 100;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .anuncio__title {
@@ -12231,7 +12231,7 @@ a {
 }
 
 .main__title {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -12246,10 +12246,10 @@ a {
 
 .tag__close {
   display: grid;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 900;
   background: #F4F0FD;
-  padding: 0.4em 0.5em;
+  padding: 0.4rem 0.5rem;
   place-items: center;
   border-radius: 50%;
   cursor: pointer;
@@ -12269,7 +12269,7 @@ a {
 .cita__icon {
   display: grid;
   place-items: center;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: var(--primary);
   background: #F4F0FD;
   width: 98px;
@@ -12278,15 +12278,15 @@ a {
 }
 
 .cita__title {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .cita__tag {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--primary);
   background: #F4F0FD;
-  padding: 0.4em 0.9em;
+  padding: 0.4rem 0.9rem;
   border-radius: 5px;
 }
 
@@ -12296,12 +12296,12 @@ a {
 }
 
 .cita__preci {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: var(--plomo);
 }
 
 .cita__text2 {
-  font-size: 0.98em;
+  font-size: 0.98rem;
   color: var(--plomo);
   font-weight: 600;
 }
@@ -12334,6 +12334,6 @@ a {
 }
 @media (max-width: 575.98px) {
   .nav {
-    width: 300px;
+    width: 310px;
   }
 }/*# sourceMappingURL=custome.css.map */
