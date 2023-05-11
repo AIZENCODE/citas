@@ -51,7 +51,7 @@ $font-family-base: 'Montserrat', sans-serif;
 }
 
 body {
-    font-size: 15.5px;
+    font-size: 15px;
 }
 
 a {
@@ -182,6 +182,7 @@ a {
     cursor: context-menu;
     transition: all .2s;
     color: var(--primary);
+    // letter-spacing: 1px;
 }
 
 .nav__img:hover {
