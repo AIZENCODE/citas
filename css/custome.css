@@ -12240,7 +12240,7 @@ a {
 }
 
 .form-control,
-.form-select {
+.form-select, .btn {
   font-size: 1em;
 }
 
@@ -12340,7 +12340,7 @@ a {
     background: #fff;
     transform: translatex(-100%);
     transition: all 0.2s;
-    width: 310px;
+    width: 280px;
   }
   .nav--active {
     transform: translatex(0%);

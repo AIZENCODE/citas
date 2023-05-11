@@ -271,7 +271,7 @@ a {
 }
 
 .form-control,
-.form-select {
+.form-select,.btn {
     font-size: 1em;
 }
 
@@ -396,7 +396,7 @@ a {
         transform: translatex(-100%);
         transition: all .2s;
 
-        width: 310px;
+        width: 280px;
 
     }
 
