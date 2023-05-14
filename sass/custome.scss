@@ -47,7 +47,7 @@ $font-family-base: 'Montserrat', sans-serif;
 /* FIN */
 
 * {
-        //  outline: 1px solid red;
+    //   outline: 1px solid red;
 }
 
 body {
@@ -272,7 +272,8 @@ a {
 }
 
 .form-control,
-.form-select,.btn {
+.form-select,
+.btn {
     font-size: 1em;
 }
 
@@ -298,7 +299,57 @@ a {
 
 // fin main
 
+
+
+
 // cita cards
+
+.card__informaciondinero {
+    background: #fff;
+    padding: 2em 1.5em;
+    border-radius: 12px;
+}
+
+.info__dinero {
+    flex: 1 1 auto;
+    justify-content: center;
+    border-right: 1px solid #cacaca;
+}
+
+.info__dinero:last-of-type {
+    border-right: unset;
+}
+
+.info__icon {
+    display: grid;
+    place-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.5em;
+    border-radius: 50%;
+}
+
+.info__icon--caja {
+
+    color: #3869E0;
+    background: #ECF3FF;
+
+}
+
+.info__icon--presupuesto {
+
+    color: #3AA87A;
+    background: #DAF9ED;
+
+}
+
+.info__icon--gastos {
+
+    color: #F67A8B;
+    background: #FCE7E9;
+}
 
 .cita__item {
     outline: 2px solid #fff;
@@ -339,6 +390,11 @@ a {
 .cita__tag--success {
     color: var(--success);
     background: #D8F3E8;
+}
+.cita__tag--gastos {
+
+    color: #F67A8B;
+    background: #FCE7E9;
 }
 
 .cita__preci {
@@ -414,6 +470,12 @@ a {
 
 }
 
+@media (max-width: 767.98px) {
+    .info__dinero {
+
+        border-right: unset;
+    }
+}
 
 
 

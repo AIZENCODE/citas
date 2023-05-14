@@ -12240,7 +12240,8 @@ a {
 }
 
 .form-control,
-.form-select, .btn {
+.form-select,
+.btn {
   font-size: 1em;
 }
 
@@ -12262,6 +12263,46 @@ a {
   place-items: center;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.card__informaciondinero {
+  background: #fff;
+  padding: 2em 1.5em;
+  border-radius: 12px;
+}
+
+.info__dinero {
+  flex: 1 1 auto;
+  justify-content: center;
+  border-right: 1px solid #cacaca;
+}
+
+.info__dinero:last-of-type {
+  border-right: unset;
+}
+
+.info__icon {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+
+.info__icon--caja {
+  color: #3869E0;
+  background: #ECF3FF;
+}
+
+.info__icon--presupuesto {
+  color: #3AA87A;
+  background: #DAF9ED;
+}
+
+.info__icon--gastos {
+  color: #F67A8B;
+  background: #FCE7E9;
 }
 
 .cita__item {
@@ -12302,6 +12343,11 @@ a {
 .cita__tag--success {
   color: var(--success);
   background: #D8F3E8;
+}
+
+.cita__tag--gastos {
+  color: #F67A8B;
+  background: #FCE7E9;
 }
 
 .cita__preci {
@@ -12348,6 +12394,11 @@ a {
   .nav__container {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .info__dinero {
+    border-right: unset;
   }
 }
 @media (max-width: 575.98px) {

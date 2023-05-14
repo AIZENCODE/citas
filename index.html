@@ -139,7 +139,32 @@
 
                     <div class="main__content mt-5">
 
-                        <div class="main__filters d-flex flex-wrap flex-lg-nowrap align-items-center gap-4 ">
+                        
+
+                        <div class="card__informaciondinero d-flex flex-wrap justify-content-around mb-4 gap-4">
+                            <div class="info__dinero info__dinero--caja d-flex align-items-center gap-3  ">
+                                <i class="fa-solid fa-cash-register info__icon info__icon--caja"></i>
+                                <div class="info__text">
+                                    <h5 class="cantidad m-0 p-0 fw-bold">$ <span id="caja"></span></h5>
+                                    <p class="info__description m-0 p-0">Inicio de caja</p>
+                                </div>
+                            </div>
+                            <div class="info__dinero info__presupuesto d-flex align-items-center gap-3  ">
+                                <i class="fa-solid fa-dollar-sign info__icon info__icon--presupuesto"></i>
+                                <div class="info__text">
+                                    <h5 class="cantidad m-0 p-0 fw-bold">$ <span id="presupuesto"></span></h5>
+                                    <p class="info__description m-0 p-0">Dinero disponible</p>
+                                </div>
+                            </div>
+                            <div class="info__dinero info__dinero--gastos d-flex align-items-center gap-3  ">
+                                <i class="fa-solid fa-basket-shopping info__icon info__icon--gastos"></i>
+                                <div class="info__text">
+                                    <h5 class="cantidad m-0 p-0 fw-bold">$ <span id="gastos">0</span></h5>
+                                    <p class="info__description m-0 p-0">Total de gastos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="main__filters d-flex flex-wrap flex-lg-nowrap align-items-center gap-4 ">
 
 
                             <div class="input-group  border rounded-2 input__search ">
@@ -191,35 +216,50 @@
 
                             <p class="m-0 p-0 align-self-center ">Clear all</p>
 
-                        </div>
+                        </div> -->
+                     
 
                         <div class="row main__citas align-items-start gap-3 gap-xxl-0 m-0 mt-5">
 
                             <div class="card col-12 col-xxl-4">
-                                <div class="card-body">
+                                <form class="card-body" id="agregargasto">
+                                    <h4 class="mb-3">Añadir gastos</h4>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
-                                            else.</div>
+                                        <label for="exampleInputEmail1" class="form-label">Gasto</label>
+                                        <input type="text" class="form-control" id="gasto" placeholder="Nombre del gasto" >
+                                        
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <label for="exampleInputPassword1" class="form-label">Cantidad</label>
+                                        <input type="number" class="form-control" id="cantidad" placeholder="0.00" >
                                     </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">Agregar</button>
+                                </form>
 
                             </div>
 
-                            <div class="citas col-12 col-xxl-8 d-flex flex-column gap-3 p-0 px-xxl-3 ">
+                            <div class="citas col-12 col-xxl-8 d-flex flex-column gap-3 p-0 px-xxl-3 " id="listagastos">
 
-                                <div
+                                <!-- <div
+                                    class="cita__item d-flex flex-column flex-lg-row align-items-center gap-5 bg-white  rounded-3 py-4 px-2  p-xxl-4   ">
+                                    <i class="fa-brands fa-dropbox cita__icon"></i>
+                                    <div class="cita__info d-grid  gap-2 w-100">
+                                        <div
+                                            class="cita__text d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center gap-3">
+                                            <h2 class="cita__title m-0 ">UX Designer</h2>
+                                            <div class="cita__tags d-flex gap-3">
+                                       
+                                                <span class="cita__tag cita__tag--gastos">gastos</span>
+                                            </div>
+                                            <h3 class="cita__preci m-0 ms-lg-auto  ">8.8 - 13.7k PLN</h3>
+                                        </div>
+                                   
+
+                                    </div>
+
+                                </div> -->
+                                <!-- <div
                                     class="cita__item d-flex flex-column flex-lg-row align-items-center gap-5 bg-white  rounded-3 py-4 px-2  p-xxl-4   ">
                                     <i class="fa-brands fa-dropbox cita__icon"></i>
                                     <div class="cita__info d-grid  gap-2 w-100">
@@ -228,7 +268,7 @@
                                             <h2 class="cita__title m-0 ">UX Designer</h2>
                                             <div class="cita__tags d-flex gap-3">
                                                 <span class="cita__tag">Remove</span>
-                                                <span class="cita__tag cita__tag--success">Sketch</span>
+                                                <span class="cita__tag cita__tag--gastos">gastos</span>
                                             </div>
                                             <h3 class="cita__preci m-0 ms-lg-auto  ">8.8 - 13.7k PLN</h3>
                                         </div>
@@ -243,9 +283,9 @@
 
                                     </div>
 
-                                </div>
+                                </div> -->
 
-
+<!-- 
                                 <div
                                     class="cita__item d-flex flex-column flex-lg-row align-items-center gap-5 bg-white  rounded-3 py-4 px-2  p-xxl-4   ">
                                     <i class="fa-brands fa-twitch cita__icon"></i>
@@ -297,9 +337,9 @@
 
                                     </div>
 
-                                </div>
+                                </div> -->
 
-                             
+<!--                              
                                 <nav aria-label="Page navigation example ">
                                     <ul class="pagination d-flex flex-wrap justify-content-end m-0">
                                         <li class="page-item disabled">
@@ -312,7 +352,7 @@
                                             <a class="page-link" href="#">Siguiente</a>
                                         </li>
                                     </ul>
-                                </nav>
+                                </nav> -->
 
 
                             </div>
